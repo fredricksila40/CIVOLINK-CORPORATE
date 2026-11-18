@@ -1,0 +1,362 @@
+{
+  "navOpenState": {
+    "expanded": "true",
+    "navOpen": true,
+    "visibleLinks": [
+      "Home",
+      "Our Platforms",
+      "Services",
+      "Technology",
+      "About",
+      "Contact"
+    ]
+  },
+  "navAfterClick": {
+    "url": "services.html",
+    "expanded": "false",
+    "navOpen": false
+  },
+  "contactConfirmation": {
+    "visible": true,
+    "text": "Prototype only \u2014 this message was not sent anywhere. The CIVOLINK corporate website prototype does not transmit, store o"
+  },
+  "results": [
+    {
+      "page": "home",
+      "viewport": "desktop",
+      "file": "index.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": false,
+      "overflowElements": [],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\home-desktop.png"
+    },
+    {
+      "page": "platforms",
+      "viewport": "desktop",
+      "file": "our-platforms.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": false,
+      "overflowElements": [],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\platforms-desktop.png"
+    },
+    {
+      "page": "services",
+      "viewport": "desktop",
+      "file": "services.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": false,
+      "overflowElements": [],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\services-desktop.png"
+    },
+    {
+      "page": "technology",
+      "viewport": "desktop",
+      "file": "technology.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": false,
+      "overflowElements": [],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\technology-desktop.png"
+    },
+    {
+      "page": "about",
+      "viewport": "desktop",
+      "file": "about.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": false,
+      "overflowElements": [],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\about-desktop.png"
+    },
+    {
+      "page": "contact",
+      "viewport": "desktop",
+      "file": "contact.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": false,
+      "overflowElements": [],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\contact-desktop.png"
+    },
+    {
+      "page": "home",
+      "viewport": "tablet",
+      "file": "index.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\home-tablet.png"
+    },
+    {
+      "page": "platforms",
+      "viewport": "tablet",
+      "file": "our-platforms.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\platforms-tablet.png"
+    },
+    {
+      "page": "services",
+      "viewport": "tablet",
+      "file": "services.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\services-tablet.png"
+    },
+    {
+      "page": "technology",
+      "viewport": "tablet",
+      "file": "technology.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\technology-tablet.png"
+    },
+    {
+      "page": "about",
+      "viewport": "tablet",
+      "file": "about.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\about-tablet.png"
+    },
+    {
+      "page": "contact",
+      "viewport": "tablet",
+      "file": "contact.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\contact-tablet.png"
+    },
+    {
+      "page": "home",
+      "viewport": "mobile",
+      "file": "index.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\home-mobile.png"
+    },
+    {
+      "page": "platforms",
+      "viewport": "mobile",
+      "file": "our-platforms.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden",
+        "THEAD.",
+        "TR.",
+        "SPAN.muted mono"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\platforms-mobile.png"
+    },
+    {
+      "page": "services",
+      "viewport": "mobile",
+      "file": "services.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden",
+        "THEAD.",
+        "TR."
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\services-mobile.png"
+    },
+    {
+      "page": "technology",
+      "viewport": "mobile",
+      "file": "technology.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\technology-mobile.png"
+    },
+    {
+      "page": "about",
+      "viewport": "mobile",
+      "file": "about.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden",
+        "THEAD.",
+        "TR."
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\about-mobile.png"
+    },
+    {
+      "page": "contact",
+      "viewport": "mobile",
+      "file": "contact.html",
+      "console": [],
+      "pageErrors": [],
+      "externalRequests": [],
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "mainH1Count": 1,
+      "externalLinks": [],
+      "navToggleVisible": true,
+      "overflowElements": [
+        "SPAN.visually-hidden"
+      ],
+      "screenshot": "E:\\Documents\\VS\\WIFI\\docs\\umbrella-prototype\\review\\contact-mobile.png"
+    }
+  ]
+}

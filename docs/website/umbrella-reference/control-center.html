@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control Center — CIVOLINK Ecosystem Overview</title>
+<meta name="description" content="Reference design for a future CIVOLINK umbrella-level ecosystem overview: product directory, integration landscape, service health model and central account concept. Demonstration data only.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#071c33">
+<link rel="icon" href="assets/icons/civolink-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="control-center">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#38c6d9" stroke-width="4" stroke-linecap="round">
+          <path d="M32 17 L45 24.5 L45 39.5 L32 47 L19 39.5 L19 24.5 Z"/>
+          <circle cx="32" cy="17" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="45" cy="39.5" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="19" cy="39.5" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="32" cy="32" r="5" fill="#ffffff" stroke="none"/>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">CIVOLINK</span>
+        <span class="brand__tag">Umbrella Platform</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html" data-nav-link>Home</a>
+      <a href="products.html" data-nav-link>Products</a>
+      <a href="control-center.html" data-nav-link aria-current="page">Control Center</a>
+      <a href="developers.html" data-nav-link>Developers</a>
+      <a href="about.html" data-nav-link>About</a>
+      <a href="contact.html" data-nav-link>Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm" href="contact.html">Contact us</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span data-nav-label>Menu</span>
+        <span class="visually-hidden">navigation</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ======================================================= page hero -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span>
+        <span aria-current="page">Control Center</span>
+      </nav>
+      <p class="eyebrow">Ecosystem overview · reference design</p>
+      <h1>CIVOLINK Control Center</h1>
+      <p class="lead">
+        A design sample for a future umbrella-level view of the CIVOLINK
+        ecosystem: what exists, what is planned, how products relate, and what
+        a high-level health presentation could look like.
+      </p>
+      <div class="stack" style="margin-top:1.5rem">
+        <span class="badge badge--reference">Reference design only</span>
+        <span class="badge badge--future">No backend connected</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== notice -->
+  <section class="section section--tight" aria-label="Demonstration data notice">
+    <div class="container">
+      <div class="notice notice--demo">
+        <strong>Demonstration data — nothing on this page is measured.</strong>
+        This page is a static presentation layer. It is not an administration
+        system, it performs no authentication, and it is not connected to any
+        product backend, router, payment system or monitoring service. Every
+        status, label and figure below is illustrative sample content chosen to
+        demonstrate layout. No uptime, traffic, subscriber, payment or
+        transaction figure on this page is real.
+      </div>
+      <div class="form-status" id="demo-feedback" tabindex="-1" aria-live="polite"></div>
+
+      <div class="stack" style="margin-top:var(--sp-4)" aria-label="Status legend">
+        <span class="small muted"><strong>Legend:</strong></span>
+        <span class="badge badge--development">Product exists in some form</span>
+        <span class="badge badge--planned">Planned</span>
+        <span class="badge badge--future">Future concept</span>
+        <span class="badge badge--reference">Demonstration sample</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ ecosystem overview -->
+  <section class="section section--tight" aria-labelledby="overview-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Ecosystem overview</p>
+        <h2 id="overview-title">How the platform is presented</h2>
+        <p class="lead">
+          Qualitative counts of <em>design entries</em>, not operational
+          metrics. They describe what this reference suite contains.
+        </p>
+      </div>
+
+      <dl class="stat-strip">
+        <div class="stat">
+          <dt>Products profiled</dt>
+          <dd>2 <small>WIFI, Biashara Flow — planning entries</small></dd>
+        </div>
+        <div class="stat">
+          <dt>Future directions</dt>
+          <dd>3 <small>Docs, accounts, additional services</small></dd>
+        </div>
+        <div class="stat">
+          <dt>Planned domains</dt>
+          <dd>5 <small>Architecture records, not registrations</small></dd>
+        </div>
+        <div class="stat">
+          <dt>Connected services</dt>
+          <dd>0 <small>No backend, API or monitoring link</small></dd>
+        </div>
+      </dl>
+
+      <div class="notice" style="margin-top:var(--sp-5)">
+        <strong>Reading these numbers:</strong> they count entries in this
+        HTML sample. They are not subscriber counts, revenue, availability
+        figures or anything a business would report.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ product directory -->
+  <section class="section section--soft" id="directory" aria-labelledby="directory-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Product directory</p>
+        <h2 id="directory-title">What is in the ecosystem</h2>
+        <p class="lead">
+          A directory view of every entry, its intended role and its planning
+          status. This is a catalogue, not a service registry.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <caption class="visually-hidden">CIVOLINK product directory with status indicators</caption>
+          <thead>
+            <tr>
+              <th scope="col">Entry</th>
+              <th scope="col">Intended role</th>
+              <th scope="col">Status indicator</th>
+              <th scope="col">Owns its own</th>
+              <th scope="col">Umbrella link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">CIVOLINK WIFI</th>
+              <td>Managed Wi-Fi hotspot connectivity</td>
+              <td><span class="badge badge--development">In development</span></td>
+              <td>Backend · data · router integration · admin panel</td>
+              <td><a href="products.html#civolink-wifi">Product page</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Biashara Flow</th>
+              <td>Business management platform</td>
+              <td><span class="badge badge--planned">Planned</span></td>
+              <td>Backend · data · security · deployment</td>
+              <td><a href="products.html#biashara-flow">Product page</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Documentation portal</th>
+              <td>Docs and support content</td>
+              <td><span class="badge badge--future">Future</span></td>
+              <td>Publishing workflow · content lifecycle</td>
+              <td><a href="developers.html#docs-direction">Developer direction</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Central accounts</th>
+              <td>Potential shared identity service</td>
+              <td><span class="badge badge--future">Future concept</span></td>
+              <td>Identity decision · security review</td>
+              <td><a href="#central-account">Concept section</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Umbrella website</th>
+              <td>Corporate identity and product discovery</td>
+              <td><span class="badge badge--reference">Reference sample</span></td>
+              <td>Presentation only — no product data</td>
+              <td><a href="about.html">About CIVOLINK</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ integration landscape -->
+  <section class="section" id="integration" aria-labelledby="landscape-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Integration landscape</p>
+        <h2 id="landscape-title">How the pieces relate</h2>
+        <p class="lead">
+          Relationships are presented as intended architecture. No line below
+          represents a live integration that has been built or tested.
+        </p>
+      </div>
+
+      <div class="split">
+        <div class="diagram diagram--light">
+          <div class="diagram__title">
+            <span>Platform relationships (illustrative)</span>
+            <span class="badge badge--reference">Concept</span>
+          </div>
+          <div class="diagram__hub" style="background:linear-gradient(140deg,rgba(18,181,165,.18),rgba(31,111,224,.12));border-color:var(--line)">
+            <strong style="color:var(--navy-800)">Umbrella presentation layer</strong>
+            <span style="color:var(--ink-500)">Brand · navigation · corporate content</span>
+          </div>
+          <div class="diagram__spoke">
+            <div class="diagram__link"></div>
+            <div class="diagram__node"><b>CIVOLINK WIFI</b><span>Independent system</span></div>
+            <div class="diagram__link"></div>
+            <div class="diagram__node"><b>Biashara Flow</b><span>Independent system</span></div>
+            <div class="diagram__link"></div>
+            <div class="diagram__node"><b>Documentation</b><span>Future content service</span></div>
+            <div class="diagram__link"></div>
+            <div class="diagram__node"><b>Accounts (concept)</b><span>Open decision</span></div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Integration principles shown here</h3>
+          <ul class="list-check">
+            <li><strong>Discovery, not control.</strong> The umbrella links to products; it does not administer them.</li>
+            <li><strong>No implied data flow.</strong> There is no shared database, message bus or synchronisation described as existing.</li>
+            <li><strong>Optional integrations.</strong> Any future connection between products must be justified, scoped and reviewed separately.</li>
+            <li><strong>Failure isolation.</strong> An outage in one layer must not cascade into another — this is a design intent, not a tested property.</li>
+          </ul>
+
+          <div class="notice notice--demo">
+            <strong>Illustrative only:</strong> this diagram describes intended
+            boundaries. It is not evidence that any integration exists.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ service health -->
+  <section class="section section--soft" id="health" aria-labelledby="health-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">High-level service health</p>
+        <h2 id="health-title">A health presentation model</h2>
+        <p class="lead">
+          This section demonstrates how health <em>could</em> be presented at
+          umbrella level. The statuses are sample labels with no measurement
+          behind them — deliberately qualitative, with no percentages, no
+          uptime figures and no traffic numbers.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <caption class="visually-hidden">Illustrative service health presentation model</caption>
+          <thead>
+            <tr>
+              <th scope="col">Layer</th>
+              <th scope="col">Sample status label</th>
+              <th scope="col">What a real version would show</th>
+              <th scope="col">Data source today</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Umbrella website</th>
+              <td><span class="badge badge--reference">Reference sample</span></td>
+              <td>Static asset availability and build status</td>
+              <td class="muted">None — static files only</td>
+            </tr>
+            <tr>
+              <th scope="row">CIVOLINK WIFI</th>
+              <td><span class="badge badge--development">Product in development</span></td>
+              <td>Portal reachability, payment flow state, provisioning queue</td>
+              <td class="muted">Not connected to this suite</td>
+            </tr>
+            <tr>
+              <th scope="row">Biashara Flow</th>
+              <td><span class="badge badge--planned">Planned</span></td>
+              <td>Application availability and job status</td>
+              <td class="muted">Product does not exist yet</td>
+            </tr>
+            <tr>
+              <th scope="row">Documentation</th>
+              <td><span class="badge badge--future">Future</span></td>
+              <td>Publish pipeline and content freshness</td>
+              <td class="muted">Not started</td>
+            </tr>
+            <tr>
+              <th scope="row">Central accounts</th>
+              <td><span class="badge badge--future">Concept</span></td>
+              <td>Identity provider availability (if ever adopted)</td>
+              <td class="muted">Open architectural decision</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="notice notice--demo" style="margin-top:var(--sp-5)">
+        <strong>Do not report these as health metrics.</strong> A production
+        version of this panel would require authenticated monitoring,
+        thresholds, retention rules and an owner-approved alerting policy —
+        none of which exists for the umbrella layer today.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ central account -->
+  <section class="section" id="central-account" aria-labelledby="account-title">
+    <div class="container split">
+      <div>
+        <div class="card__meta">
+          <span class="badge badge--future">Future concept</span>
+          <span class="tag">accounts.civolink.com</span>
+        </div>
+        <p class="eyebrow">Central account service</p>
+        <h2 id="account-title">A possible future identity layer</h2>
+        <p class="lead">
+          A single place where a customer could hold an identity across CIVOLINK
+          products is recorded as a <em>possible</em> direction — explicitly
+          not an implemented, deployed or promised capability.
+        </p>
+        <ul class="list-check">
+          <li><strong>Not claimed today.</strong> No single sign-on, shared session or cross-product login exists in this suite or is implied by it.</li>
+          <li><strong>Requires its own decision.</strong> Adoption would need a separate identity architecture review and explicit owner approval.</li>
+          <li><strong>Security-first if adopted.</strong> Identity is the highest-blast-radius system a platform can own; the review bar must be the highest too.</li>
+          <li><strong>Products stay independent.</strong> Any identity service would be optional — no product may depend on it to operate.</li>
+        </ul>
+        <a class="btn btn--outline" href="contact.html#technical">Discuss the direction</a>
+      </div>
+
+      <div class="diagram diagram--light">
+        <div class="diagram__title">
+          <span>Concept only — not implemented</span>
+          <span class="badge badge--future">Future</span>
+        </div>
+        <div class="diagram__hub" style="background:linear-gradient(140deg,rgba(95,113,134,.18),rgba(31,111,224,.1));border-color:var(--line)">
+          <strong style="color:var(--navy-800)">accounts.civolink.com</strong>
+          <span style="color:var(--ink-500)">Potential identity service · undecided</span>
+        </div>
+        <div class="diagram__spoke">
+          <div class="diagram__link"></div>
+          <div class="diagram__node"><b>CIVOLINK WIFI</b><span>Would stay independent</span></div>
+          <div class="diagram__link"></div>
+          <div class="diagram__node"><b>Biashara Flow</b><span>Would stay independent</span></div>
+          <div class="diagram__link"></div>
+          <div class="diagram__node"><b>Umbrella site</b><span>No auth today</span></div>
+        </div>
+        <p class="small muted" style="margin:1rem 0 0">
+          This reference suite contains no authentication of any kind — not
+          even a demonstration login form — so that nothing here can be
+          mistaken for an identity system.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== CTA -->
+  <section class="section section--tight" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2 id="cta-title">This panel is a design, not a system</h2>
+          <p>
+            If you want to see the operational CIVOLINK WIFI administration
+            concept, that lives in a separate WIFI reference set — this page
+            never replaces it.
+          </p>
+        </div>
+        <div class="stack">
+          <a class="btn btn--primary" href="products.html">Back to products</a>
+          <a class="btn btn--light" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#38c6d9" stroke-width="4" stroke-linecap="round">
+              <path d="M32 17 L45 24.5 L45 39.5 L32 47 L19 39.5 L19 24.5 Z"/>
+              <circle cx="32" cy="32" r="5" fill="#ffffff" stroke="none"/>
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">CIVOLINK</span>
+            <span class="brand__tag">Umbrella Platform</span>
+          </span>
+        </a>
+        <p>
+          The umbrella identity for an ecosystem of independent digital
+          products and services. This is a static HTML reference suite used to
+          establish visual identity and information architecture.
+        </p>
+        <p><span class="badge badge--reference">Reference sample only</span></p>
+      </div>
+
+      <div>
+        <h4>Umbrella site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-nav-link>Home</a></li>
+          <li><a href="products.html" data-nav-link>Products</a></li>
+          <li><a href="control-center.html" data-nav-link aria-current="page">Control Center</a></li>
+          <li><a href="developers.html" data-nav-link>Developers</a></li>
+          <li><a href="about.html" data-nav-link>About</a></li>
+          <li><a href="contact.html" data-nav-link>Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html#civolink-wifi">CIVOLINK WIFI</a></li>
+          <li><a href="products.html#biashara-flow">Biashara Flow</a></li>
+          <li><a href="products.html#future-products">Future products</a></li>
+          <li><a href="control-center.html">Ecosystem overview</a></li>
+          <li><a href="developers.html#integration">Integration approach</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Planned destinations</h4>
+        <ul class="footer-domains">
+          <li><b>civolink.com</b> — corporate site (this reference)</li>
+          <li><b>wifi.civolink.com</b> — planned</li>
+          <li><b>biashara.civolink.com</b> — planned</li>
+          <li><b>docs.civolink.com</b> — future</li>
+          <li><b>accounts.civolink.com</b> — future concept</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p>
+        Static HTML/CSS/JavaScript reference suite. No backend, database,
+        authentication, analytics or external service is connected. Product
+        availability, statuses and any example figures shown anywhere in this
+        suite are illustrative.
+      </p>
+      <p>© <span data-year>2026</span> CIVOLINK — reference sample, not production.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

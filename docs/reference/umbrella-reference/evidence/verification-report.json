@@ -1,0 +1,1459 @@
+{
+  "static": {
+    "per_page": {
+      "index.html": {
+        "refs": 33,
+        "local": 33
+      },
+      "products.html": {
+        "refs": 39,
+        "local": 39
+      },
+      "control-center.html": {
+        "refs": 33,
+        "local": 33
+      },
+      "developers.html": {
+        "refs": 29,
+        "local": 29
+      },
+      "about.html": {
+        "refs": 29,
+        "local": 29
+      },
+      "contact.html": {
+        "refs": 33,
+        "local": 33
+      }
+    }
+  },
+  "browser": {
+    "mobile-375/index.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 375,
+      "client_width": 375,
+      "external_requests": []
+    },
+    "mobile-375/products.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 375,
+      "client_width": 375,
+      "external_requests": []
+    },
+    "mobile-375/control-center.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 375,
+      "client_width": 375,
+      "external_requests": []
+    },
+    "mobile-375/developers.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 375,
+      "client_width": 375,
+      "external_requests": []
+    },
+    "mobile-375/about.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 375,
+      "client_width": 375,
+      "external_requests": []
+    },
+    "mobile-375/contact.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 375,
+      "client_width": 375,
+      "external_requests": []
+    },
+    "tablet-768/index.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 768,
+      "client_width": 768,
+      "external_requests": []
+    },
+    "tablet-768/products.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 768,
+      "client_width": 768,
+      "external_requests": []
+    },
+    "tablet-768/control-center.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 768,
+      "client_width": 768,
+      "external_requests": []
+    },
+    "tablet-768/developers.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 768,
+      "client_width": 768,
+      "external_requests": []
+    },
+    "tablet-768/about.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 768,
+      "client_width": 768,
+      "external_requests": []
+    },
+    "tablet-768/contact.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 768,
+      "client_width": 768,
+      "external_requests": []
+    },
+    "desktop-1440/index.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 1440,
+      "client_width": 1440,
+      "external_requests": []
+    },
+    "desktop-1440/products.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 1440,
+      "client_width": 1440,
+      "external_requests": []
+    },
+    "desktop-1440/control-center.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 1440,
+      "client_width": 1440,
+      "external_requests": []
+    },
+    "desktop-1440/developers.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 1440,
+      "client_width": 1440,
+      "external_requests": []
+    },
+    "desktop-1440/about.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 1440,
+      "client_width": 1440,
+      "external_requests": []
+    },
+    "desktop-1440/contact.html": {
+      "console_errors": [],
+      "page_errors": [],
+      "horizontal_overflow": false,
+      "scroll_width": 1440,
+      "client_width": 1440,
+      "external_requests": []
+    }
+  },
+  "checks": [
+    {
+      "name": "exists: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: assets/css/styles.css",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: assets/js/main.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: assets/icons/civolink-mark.svg",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exists: README.md",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no duplicate umbrella suite outside docs/umbrella-reference",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no broken local file references",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "all fragment anchors resolve",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no external http(s)/mailto/tel links (no dead or invented URLs)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "title present: index.html",
+      "ok": true,
+      "detail": "CIVOLINK \u2014 Technology and Digital Services Ecosystem"
+    },
+    {
+      "name": "meta description: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta viewport: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta robots noindex: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exactly one h1: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has <main id=main>: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has skip link: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header nav present: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "footer present: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links stylesheet: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links script: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "favicon: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html links to index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html links to products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html links to control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html links to developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html links to about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "index.html links to contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nav data-nav-link wiring: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "title present: products.html",
+      "ok": true,
+      "detail": "Products and Services \u2014 CIVOLINK"
+    },
+    {
+      "name": "meta description: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta viewport: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta robots noindex: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exactly one h1: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has <main id=main>: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has skip link: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header nav present: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "footer present: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links stylesheet: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links script: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "favicon: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "products.html links to index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "products.html links to products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "products.html links to control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "products.html links to developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "products.html links to about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "products.html links to contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nav data-nav-link wiring: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "title present: control-center.html",
+      "ok": true,
+      "detail": "Control Center \u2014 CIVOLINK Ecosystem Overview"
+    },
+    {
+      "name": "meta description: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta viewport: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta robots noindex: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exactly one h1: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has <main id=main>: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has skip link: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header nav present: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "footer present: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links stylesheet: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links script: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "favicon: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "control-center.html links to index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "control-center.html links to products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "control-center.html links to control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "control-center.html links to developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "control-center.html links to about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "control-center.html links to contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nav data-nav-link wiring: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "title present: developers.html",
+      "ok": true,
+      "detail": "Developers and Integration \u2014 CIVOLINK"
+    },
+    {
+      "name": "meta description: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta viewport: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta robots noindex: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exactly one h1: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has <main id=main>: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has skip link: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header nav present: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "footer present: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links stylesheet: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links script: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "favicon: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "developers.html links to index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "developers.html links to products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "developers.html links to control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "developers.html links to developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "developers.html links to about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "developers.html links to contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nav data-nav-link wiring: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "title present: about.html",
+      "ok": true,
+      "detail": "About CIVOLINK \u2014 Mission, Vision and Values"
+    },
+    {
+      "name": "meta description: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta viewport: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta robots noindex: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exactly one h1: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has <main id=main>: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has skip link: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header nav present: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "footer present: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links stylesheet: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links script: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "favicon: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "about.html links to index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "about.html links to products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "about.html links to control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "about.html links to developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "about.html links to about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "about.html links to contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nav data-nav-link wiring: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "title present: contact.html",
+      "ok": true,
+      "detail": "Contact and Business Enquiries \u2014 CIVOLINK"
+    },
+    {
+      "name": "meta description: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta viewport: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "meta robots noindex: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "exactly one h1: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has <main id=main>: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "has skip link: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header nav present: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "footer present: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links stylesheet: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "links script: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "favicon: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "contact.html links to index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "contact.html links to products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "contact.html links to control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "contact.html links to developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "contact.html links to about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "contact.html links to contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nav data-nav-link wiring: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no network/analytics/key patterns: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no network/analytics/key patterns: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no network/analytics/key patterns: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no network/analytics/key patterns: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no network/analytics/key patterns: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no network/analytics/key patterns: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no console errors: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no page errors: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no horizontal overflow: index.html",
+      "ok": true,
+      "detail": "scrollWidth=375 clientWidth=375"
+    },
+    {
+      "name": "[mobile-375] no external network requests: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] header nav has 6 links: index.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[mobile-375] no console errors: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no page errors: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no horizontal overflow: products.html",
+      "ok": true,
+      "detail": "scrollWidth=375 clientWidth=375"
+    },
+    {
+      "name": "[mobile-375] no external network requests: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] header nav has 6 links: products.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[mobile-375] no console errors: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no page errors: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no horizontal overflow: control-center.html",
+      "ok": true,
+      "detail": "scrollWidth=375 clientWidth=375"
+    },
+    {
+      "name": "[mobile-375] no external network requests: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] header nav has 6 links: control-center.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[mobile-375] no console errors: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no page errors: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no horizontal overflow: developers.html",
+      "ok": true,
+      "detail": "scrollWidth=375 clientWidth=375"
+    },
+    {
+      "name": "[mobile-375] no external network requests: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] header nav has 6 links: developers.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[mobile-375] no console errors: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no page errors: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no horizontal overflow: about.html",
+      "ok": true,
+      "detail": "scrollWidth=375 clientWidth=375"
+    },
+    {
+      "name": "[mobile-375] no external network requests: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] header nav has 6 links: about.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[mobile-375] no console errors: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no page errors: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] no horizontal overflow: contact.html",
+      "ok": true,
+      "detail": "scrollWidth=375 clientWidth=375"
+    },
+    {
+      "name": "[mobile-375] no external network requests: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[mobile-375] header nav has 6 links: contact.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[tablet-768] no console errors: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no page errors: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no horizontal overflow: index.html",
+      "ok": true,
+      "detail": "scrollWidth=768 clientWidth=768"
+    },
+    {
+      "name": "[tablet-768] no external network requests: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] header nav has 6 links: index.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[tablet-768] no console errors: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no page errors: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no horizontal overflow: products.html",
+      "ok": true,
+      "detail": "scrollWidth=768 clientWidth=768"
+    },
+    {
+      "name": "[tablet-768] no external network requests: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] header nav has 6 links: products.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[tablet-768] no console errors: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no page errors: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no horizontal overflow: control-center.html",
+      "ok": true,
+      "detail": "scrollWidth=768 clientWidth=768"
+    },
+    {
+      "name": "[tablet-768] no external network requests: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] header nav has 6 links: control-center.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[tablet-768] no console errors: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no page errors: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no horizontal overflow: developers.html",
+      "ok": true,
+      "detail": "scrollWidth=768 clientWidth=768"
+    },
+    {
+      "name": "[tablet-768] no external network requests: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] header nav has 6 links: developers.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[tablet-768] no console errors: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no page errors: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no horizontal overflow: about.html",
+      "ok": true,
+      "detail": "scrollWidth=768 clientWidth=768"
+    },
+    {
+      "name": "[tablet-768] no external network requests: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] header nav has 6 links: about.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[tablet-768] no console errors: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no page errors: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] no horizontal overflow: contact.html",
+      "ok": true,
+      "detail": "scrollWidth=768 clientWidth=768"
+    },
+    {
+      "name": "[tablet-768] no external network requests: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[tablet-768] header nav has 6 links: contact.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[desktop-1440] no console errors: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no page errors: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no horizontal overflow: index.html",
+      "ok": true,
+      "detail": "scrollWidth=1440 clientWidth=1440"
+    },
+    {
+      "name": "[desktop-1440] no external network requests: index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] header nav has 6 links: index.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[desktop-1440] no console errors: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no page errors: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no horizontal overflow: products.html",
+      "ok": true,
+      "detail": "scrollWidth=1440 clientWidth=1440"
+    },
+    {
+      "name": "[desktop-1440] no external network requests: products.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] header nav has 6 links: products.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[desktop-1440] no console errors: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no page errors: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no horizontal overflow: control-center.html",
+      "ok": true,
+      "detail": "scrollWidth=1440 clientWidth=1440"
+    },
+    {
+      "name": "[desktop-1440] no external network requests: control-center.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] header nav has 6 links: control-center.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[desktop-1440] no console errors: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no page errors: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no horizontal overflow: developers.html",
+      "ok": true,
+      "detail": "scrollWidth=1440 clientWidth=1440"
+    },
+    {
+      "name": "[desktop-1440] no external network requests: developers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] header nav has 6 links: developers.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[desktop-1440] no console errors: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no page errors: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no horizontal overflow: about.html",
+      "ok": true,
+      "detail": "scrollWidth=1440 clientWidth=1440"
+    },
+    {
+      "name": "[desktop-1440] no external network requests: about.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] header nav has 6 links: about.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "[desktop-1440] no console errors: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no page errors: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] no horizontal overflow: contact.html",
+      "ok": true,
+      "detail": "scrollWidth=1440 clientWidth=1440"
+    },
+    {
+      "name": "[desktop-1440] no external network requests: contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "[desktop-1440] header nav has 6 links: contact.html",
+      "ok": true,
+      "detail": "count=6"
+    },
+    {
+      "name": "nav click reaches index.html",
+      "ok": true,
+      "detail": "http://127.0.0.1:8765/index.html"
+    },
+    {
+      "name": "active nav state set on index.html",
+      "ok": true,
+      "detail": "count=1"
+    },
+    {
+      "name": "nav click reaches products.html",
+      "ok": true,
+      "detail": "http://127.0.0.1:8765/products.html"
+    },
+    {
+      "name": "active nav state set on products.html",
+      "ok": true,
+      "detail": "count=1"
+    },
+    {
+      "name": "nav click reaches control-center.html",
+      "ok": true,
+      "detail": "http://127.0.0.1:8765/control-center.html"
+    },
+    {
+      "name": "active nav state set on control-center.html",
+      "ok": true,
+      "detail": "count=1"
+    },
+    {
+      "name": "nav click reaches developers.html",
+      "ok": true,
+      "detail": "http://127.0.0.1:8765/developers.html"
+    },
+    {
+      "name": "active nav state set on developers.html",
+      "ok": true,
+      "detail": "count=1"
+    },
+    {
+      "name": "nav click reaches about.html",
+      "ok": true,
+      "detail": "http://127.0.0.1:8765/about.html"
+    },
+    {
+      "name": "active nav state set on about.html",
+      "ok": true,
+      "detail": "count=1"
+    },
+    {
+      "name": "nav click reaches contact.html",
+      "ok": true,
+      "detail": "http://127.0.0.1:8765/contact.html"
+    },
+    {
+      "name": "active nav state set on contact.html",
+      "ok": true,
+      "detail": "count=1"
+    },
+    {
+      "name": "footer link reaches contact.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "in-page anchor scrolls to section",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "demo action shows explanatory notice",
+      "ok": true,
+      "detail": "Future-product proposal: this is a reference placeholder. No submission channel "
+    },
+    {
+      "name": "demo action does not navigate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "form shows demonstration-only notice",
+      "ok": true,
+      "detail": "Static demonstration only \u2014 this form has no backend. Your details were validated in the browser and were NOT "
+    },
+    {
+      "name": "form performed no POST request",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "name": "form made no external requests",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "form has no fake success wording",
+      "ok": true,
+      "detail": "Static demonstration only \u2014 this form has no backend. Your details were validate"
+    },
+    {
+      "name": "form resets after demo submit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: toggle visible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: nav hidden initially",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: nav opens on toggle",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: aria-expanded true",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: label changes to Close",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: Escape closes nav",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: nav link navigates",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: nav auto-closes after click",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "keyboard: first Tab reaches skip link",
+      "ok": true,
+      "detail": "skip-link"
+    },
+    {
+      "name": "no uncaught page errors during behaviour tests",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "total": 255,
+    "passed": 255,
+    "failed": 0,
+    "failed_names": []
+  }
+}

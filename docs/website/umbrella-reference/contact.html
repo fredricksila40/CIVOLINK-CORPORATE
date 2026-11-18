@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact and Business Enquiries — CIVOLINK</title>
+<meta name="description" content="Contact CIVOLINK for general enquiries, business partnerships, technical and integration questions, or product-specific requests. Static demonstration form — no backend is connected.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#071c33">
+<link rel="icon" href="assets/icons/civolink-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#38c6d9" stroke-width="4" stroke-linecap="round">
+          <path d="M32 17 L45 24.5 L45 39.5 L32 47 L19 39.5 L19 24.5 Z"/>
+          <circle cx="32" cy="17" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="45" cy="39.5" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="19" cy="39.5" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="32" cy="32" r="5" fill="#ffffff" stroke="none"/>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">CIVOLINK</span>
+        <span class="brand__tag">Umbrella Platform</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html" data-nav-link>Home</a>
+      <a href="products.html" data-nav-link>Products</a>
+      <a href="control-center.html" data-nav-link>Control Center</a>
+      <a href="developers.html" data-nav-link>Developers</a>
+      <a href="about.html" data-nav-link>About</a>
+      <a href="contact.html" data-nav-link aria-current="page">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm" href="#enquiry-form">Contact us</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span data-nav-label>Menu</span>
+        <span class="visually-hidden">navigation</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ======================================================= page hero -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span>
+        <span aria-current="page">Contact</span>
+      </nav>
+      <p class="eyebrow">Contact and business enquiries</p>
+      <h1>Talk to CIVOLINK</h1>
+      <p class="lead">
+        General questions, partnership proposals, technical integrations and
+        product-specific requests. Pick the route that matches — it helps the
+        right team see it first.
+      </p>
+      <div class="stack" style="margin-top:1.5rem">
+        <a class="btn btn--primary" href="#enquiry-form">Open the enquiry form</a>
+        <a class="btn btn--light" href="#routes">See the routes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== notice -->
+  <section class="section section--tight" aria-label="Demonstration notice">
+    <div class="container">
+      <div class="notice notice--demo">
+        <strong>Static demonstration — this form does not send anything.</strong>
+        There is no mail service, no ticketing system and no database behind
+        this page. Submitting it performs local browser validation only and
+        displays an on-screen notice; your details are discarded immediately
+        and are never transmitted. Contact channels below are placeholders
+        until the owner publishes confirmed details.
+      </div>
+      <div class="form-status" id="demo-feedback" tabindex="-1" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================== routes -->
+  <section class="section section--tight" id="routes" aria-labelledby="routes-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Enquiry routes</p>
+        <h2 id="routes-title">Where your message should go</h2>
+      </div>
+
+      <div class="grid grid-4">
+        <article class="card" id="general">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/>
+            </svg>
+          </div>
+          <h3>General enquiries</h3>
+          <p class="muted small">
+            Anything about CIVOLINK as a whole: who we are, how the ecosystem
+            is organised, media or informational questions.
+          </p>
+          <p class="card__footer"><a class="btn btn--outline btn--sm" href="#enquiry-form">Use the form</a></p>
+        </article>
+
+        <article class="card" id="partnership">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <path d="M8 12l3 3 5-6"/><circle cx="12" cy="12" r="9"/>
+            </svg>
+          </div>
+          <h3>Business partnerships</h3>
+          <p class="muted small">
+            Distribution, co-location, reseller, channel or joint-venture
+            conversations, including proposals that span more than one product.
+          </p>
+          <p class="card__footer"><a class="btn btn--outline btn--sm" href="#enquiry-form">Use the form</a></p>
+        </article>
+
+        <article class="card" id="technical">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/>
+            </svg>
+          </div>
+          <h3>Technical &amp; integration</h3>
+          <p class="muted small">
+            API questions, integration planning, security reviews and
+            architecture discussions with the relevant product team.
+          </p>
+          <p class="card__footer"><a class="btn btn--outline btn--sm" href="developers.html">Read the direction first</a></p>
+        </article>
+
+        <article class="card" id="support">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6l7-3z"/>
+            </svg>
+          </div>
+          <h3>Technical support</h3>
+          <p class="muted small">
+            Support is handled inside each product's own operation — the
+            umbrella site does not run a shared support desk.
+          </p>
+          <p class="card__footer"><a class="btn btn--outline btn--sm" href="#support-note">How support is routed</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ product enquiries -->
+  <section class="section section--soft" id="product-enquiry" aria-labelledby="product-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Product-specific enquiries</p>
+        <h2 id="product-title">Talk to the team that owns the product</h2>
+        <p class="lead">
+          Each product answers for itself. Selecting a product below sets the
+          context for your enquiry — it does not open a separate system.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <caption class="visually-hidden">Product-specific enquiry routing</caption>
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Good reasons to contact about it</th>
+              <th scope="col">Handled by</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">CIVOLINK WIFI</th>
+              <td>Hotspot deployments, connectivity partnerships, payment-flow questions, operator interest</td>
+              <td>CIVOLINK WIFI product team</td>
+              <td><span class="badge badge--development">In development</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Biashara Flow</th>
+              <td>Early interest, workflow requirements, design-partner conversations</td>
+              <td>Biashara Flow product team</td>
+              <td><span class="badge badge--planned">Planned</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Umbrella / corporate</th>
+              <td>Brand, partnerships, documentation, general corporate matters</td>
+              <td>CIVOLINK corporate contact</td>
+              <td><span class="badge badge--reference">Reference sample</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== form -->
+  <section class="section" id="enquiry-form" aria-labelledby="form-title">
+    <div class="container split" style="align-items:start">
+      <div>
+        <p class="eyebrow">Enquiry form</p>
+        <h2 id="form-title">Send a message <span class="badge badge--reference" style="vertical-align:middle">Demonstration</span></h2>
+        <p class="lead">
+          This form shows the intended contact experience: what we would ask,
+          how we would route it, and what confirmation would look like.
+        </p>
+
+        <div class="notice notice--demo">
+          <strong>What happens on submit:</strong> the browser validates the
+          fields, shows an on-screen notice, and clears the form. Nothing is
+          transmitted, stored, logged or emailed. There is deliberately no
+          fake "message sent successfully" confirmation.
+        </div>
+
+        <div class="divider-label">Confirmed contact channels</div>
+
+        <div class="grid" style="gap:var(--sp-3)">
+          <div class="card card--flat">
+            <p class="small" style="margin:0"><strong>General &amp; partnership</strong><br>
+            <span class="muted">Email channel — to be confirmed and published by the owner</span></p>
+          </div>
+          <div class="card card--flat">
+            <p class="small" style="margin:0"><strong>Technical &amp; integration</strong><br>
+            <span class="muted">Contact route — to be confirmed and published by the owner</span></p>
+          </div>
+          <div class="card card--flat">
+            <p class="small" style="margin:0"><strong>Telephone</strong><br>
+            <span class="muted">Not published in this reference suite</span></p>
+          </div>
+          <div class="card card--flat">
+            <p class="small" style="margin:0"><strong>Office address</strong><br>
+            <span class="muted">Not published in this reference suite</span></p>
+          </div>
+          <div class="card card--flat">
+            <p class="small" style="margin:0"><strong>Social media</strong><br>
+            <span class="muted">No accounts are represented here; none are claimed</span></p>
+          </div>
+        </div>
+
+        <p class="small muted" style="margin-top:var(--sp-4)">
+          No email address, telephone number, street address or social handle
+          is invented anywhere in this suite. Placeholder wording above is
+          intentional and must be replaced only with owner-confirmed details.
+        </p>
+      </div>
+
+      <div class="card card--pad-lg">
+        <form class="form" data-demo-form novalidate>
+          <div class="notice notice--demo" style="margin:0">
+            <strong>Static demonstration form.</strong> Not connected to any
+            backend, mail service or CRM.
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Full name" required>
+            </div>
+            <div class="field">
+              <label for="organisation">Organisation <span class="muted">(optional)</span></label>
+              <input id="organisation" name="organisation" type="text" autocomplete="organization" placeholder="Company or team">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+              <span class="field__hint">Used only to demonstrate field validation — never sent.</span>
+            </div>
+            <div class="field">
+              <label for="route">Enquiry route</label>
+              <select id="route" name="route" required>
+                <option value="">Choose a route…</option>
+                <option value="general">General enquiry</option>
+                <option value="partnership">Business partnership</option>
+                <option value="technical">Technical / integration</option>
+                <option value="wifi">CIVOLINK WIFI</option>
+                <option value="biashara">Biashara Flow</option>
+                <option value="support">Technical support direction</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="What is this about?" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you are trying to achieve." required></textarea>
+            <span class="field__hint">Do not include passwords, API keys or payment details in any message.</span>
+          </div>
+
+          <label class="checkbox" for="ack">
+            <input id="ack" name="ack" type="checkbox" required>
+            <span>I understand this is a static demonstration form and that nothing will be transmitted.</span>
+          </label>
+
+          <div class="stack">
+            <button class="btn btn--primary" type="submit">Submit (demonstration)</button>
+            <button class="btn btn--outline" type="reset">Clear form</button>
+          </div>
+
+          <div class="form-status" data-form-status aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ support note -->
+  <section class="section section--soft" id="support-note" aria-labelledby="support-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Support routing</p>
+        <h2 id="support-title">Technical support does not run through this page</h2>
+        <p class="lead">
+          The umbrella website has no ticket queue. Support is an
+          application-specific responsibility: the product you are using
+          provides its own support route, under its own terms.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card card--flat">
+          <h3>For CIVOLINK WIFI</h3>
+          <p class="muted small">
+            Connectivity and hotspot issues are handled by the Wi-Fi product's
+            own support configuration. That route is defined by the product
+            operator, not by this site.
+          </p>
+        </article>
+        <article class="card card--flat">
+          <h3>For Biashara Flow</h3>
+          <p class="muted small">
+            The product is planned; a support model will be defined alongside
+            its implementation rather than assumed here.
+          </p>
+        </article>
+        <article class="card card--flat">
+          <h3>For corporate matters</h3>
+          <p class="muted small">
+            Use the enquiry form above. It demonstrates the routing; the
+            confirmed channel will be published here once the owner approves
+            it.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== CTA -->
+  <section class="section section--tight" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2 id="cta-title">Not sure which route fits?</h2>
+          <p>Choose “General enquiry” and describe the situation — misrouted messages are easy to redirect; lost ones are not.</p>
+        </div>
+        <div class="stack">
+          <a class="btn btn--primary" href="#enquiry-form">Open the form</a>
+          <a class="btn btn--light" href="products.html">Review products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#38c6d9" stroke-width="4" stroke-linecap="round">
+              <path d="M32 17 L45 24.5 L45 39.5 L32 47 L19 39.5 L19 24.5 Z"/>
+              <circle cx="32" cy="32" r="5" fill="#ffffff" stroke="none"/>
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">CIVOLINK</span>
+            <span class="brand__tag">Umbrella Platform</span>
+          </span>
+        </a>
+        <p>
+          The umbrella identity for an ecosystem of independent digital
+          products and services. This is a static HTML reference suite used to
+          establish visual identity and information architecture.
+        </p>
+        <p><span class="badge badge--reference">Reference sample only</span></p>
+      </div>
+
+      <div>
+        <h4>Umbrella site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-nav-link>Home</a></li>
+          <li><a href="products.html" data-nav-link>Products</a></li>
+          <li><a href="control-center.html" data-nav-link>Control Center</a></li>
+          <li><a href="developers.html" data-nav-link>Developers</a></li>
+          <li><a href="about.html" data-nav-link>About</a></li>
+          <li><a href="contact.html" data-nav-link aria-current="page">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html#civolink-wifi">CIVOLINK WIFI</a></li>
+          <li><a href="products.html#biashara-flow">Biashara Flow</a></li>
+          <li><a href="products.html#future-products">Future products</a></li>
+          <li><a href="control-center.html">Ecosystem overview</a></li>
+          <li><a href="developers.html#integration">Integration approach</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Planned destinations</h4>
+        <ul class="footer-domains">
+          <li><b>civolink.com</b> — corporate site (this reference)</li>
+          <li><b>wifi.civolink.com</b> — planned</li>
+          <li><b>biashara.civolink.com</b> — planned</li>
+          <li><b>docs.civolink.com</b> — future</li>
+          <li><b>accounts.civolink.com</b> — future concept</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p>
+        Static HTML/CSS/JavaScript reference suite. No backend, database,
+        authentication, analytics or external service is connected. Product
+        availability, statuses and any example figures shown anywhere in this
+        suite are illustrative.
+      </p>
+      <p>© <span data-year>2026</span> CIVOLINK — reference sample, not production.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

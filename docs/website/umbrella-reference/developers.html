@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Developers and Integration — CIVOLINK</title>
+<meta name="description" content="CIVOLINK technical direction: product architecture, API and integration philosophy, security principles, independent application architecture and future developer documentation. Illustrative examples only.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#071c33">
+<link rel="icon" href="assets/icons/civolink-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="developers">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#38c6d9" stroke-width="4" stroke-linecap="round">
+          <path d="M32 17 L45 24.5 L45 39.5 L32 47 L19 39.5 L19 24.5 Z"/>
+          <circle cx="32" cy="17" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="45" cy="39.5" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="19" cy="39.5" r="4" fill="#12b5a5" stroke="none"/>
+          <circle cx="32" cy="32" r="5" fill="#ffffff" stroke="none"/>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">CIVOLINK</span>
+        <span class="brand__tag">Umbrella Platform</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html" data-nav-link>Home</a>
+      <a href="products.html" data-nav-link>Products</a>
+      <a href="control-center.html" data-nav-link>Control Center</a>
+      <a href="developers.html" data-nav-link aria-current="page">Developers</a>
+      <a href="about.html" data-nav-link>About</a>
+      <a href="contact.html" data-nav-link>Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm" href="contact.html">Contact us</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span data-nav-label>Menu</span>
+        <span class="visually-hidden">navigation</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ======================================================= page hero -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span>
+        <span aria-current="page">Developers</span>
+      </nav>
+      <p class="eyebrow">Developers and integration</p>
+      <h1>How CIVOLINK is meant to be built</h1>
+      <p class="lead">
+        Technical direction for the umbrella platform and its products:
+        independent systems, explicit boundaries, and an integration story
+        that never claims more than it has proven.
+      </p>
+      <div class="stack" style="margin-top:1.5rem">
+        <span class="badge badge--reference">Direction document</span>
+        <span class="badge badge--future">No public API today</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== notice -->
+  <section class="section section--tight" aria-label="Reference notice">
+    <div class="container">
+      <div class="notice notice--demo">
+        <strong>Illustrative content throughout.</strong>
+        No CIVOLINK public API is published by this page. Every payload,
+        endpoint path and field name below is a documentation example chosen
+        to explain a pattern — it is not a specification, and it must not be
+        implemented against. No API keys, credentials, private endpoints or
+        internal hostnames appear anywhere in this suite.
+      </div>
+      <div class="form-status" id="demo-feedback" tabindex="-1" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ developer intro -->
+  <section class="section section--tight" aria-labelledby="intro-title">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Developer introduction</p>
+        <h2 id="intro-title">Build against a product, not a monolith</h2>
+        <p class="lead">
+          Each CIVOLINK product is an independent application with its own
+          backend, database, security controls and deployment lifecycle. There
+          is no central platform API that everything hangs from — by design.
+        </p>
+        <p class="muted">
+          That choice has a practical consequence for integrators: you
+          integrate with the product that owns the data you need, under that
+          product's own contract, rate limits and review process. The umbrella
+          website's job is to tell you which product that is.
+        </p>
+        <div class="stack">
+          <a class="btn btn--navy" href="#architecture">Architecture overview</a>
+          <a class="btn btn--outline" href="contact.html#technical">Integration enquiry</a>
+        </div>
+      </div>
+
+      <div class="diagram diagram--light">
+        <div class="diagram__title">
+          <span>Integration shape (illustrative)</span>
+          <span class="badge badge--reference">Concept</span>
+        </div>
+        <div class="diagram__hub" style="background:linear-gradient(140deg,rgba(18,181,165,.18),rgba(31,111,224,.12));border-color:var(--line)">
+          <strong style="color:var(--navy-800)">Your integration</strong>
+          <span style="color:var(--ink-500)">Partner, internal tool or customer app</span>
+        </div>
+        <div class="diagram__spoke">
+          <div class="diagram__link"></div>
+          <div class="diagram__node"><b>CIVOLINK WIFI contract</b><span>Own API surface</span></div>
+          <div class="diagram__link"></div>
+          <div class="diagram__node"><b>Biashara Flow contract</b><span>Own API surface</span></div>
+          <div class="diagram__link"></div>
+          <div class="diagram__node"><b>Umbrella website</b><span>Content only — no API</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ architecture -->
+  <section class="section section--soft" id="architecture" aria-labelledby="arch-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Product architecture overview</p>
+        <h2 id="arch-title">Independent applications, shared presentation</h2>
+        <p class="lead">
+          The layering below is an architectural intent. It is not a
+          description of deployed infrastructure, and no deployment has been
+          verified as part of this suite.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/>
+            </svg>
+          </div>
+          <h3>Presentation layer</h3>
+          <p class="muted small">
+            The umbrella website: brand, navigation, corporate content and
+            product discovery. Static content, no product data, no privileged
+            operations.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <rect x="4" y="4" width="16" height="16" rx="3"/>
+              <path d="M4 9.5h16M9 9.5V20"/>
+            </svg>
+          </div>
+          <h3>Product applications</h3>
+          <p class="muted small">
+            CIVOLINK WIFI and Biashara Flow: each with its own server code,
+            data store, authentication model, configuration and release
+            process.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6l7-3z"/>
+            </svg>
+          </div>
+          <h3>Boundary controls</h3>
+          <p class="muted small">
+            Security and operational boundaries per product: secrets stay with
+            the system that needs them, and corporate content management never
+            reaches administration.
+          </p>
+        </article>
+      </div>
+
+      <div class="notice" style="margin-top:var(--sp-5)">
+        <strong>Independence is the point.</strong> Failure of the corporate
+        website must not interrupt a customer-facing product, and a product
+        incident must not take down corporate communication. This is a design
+        requirement, not a measured property of anything deployed today.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ API philosophy -->
+  <section class="section" id="integration" aria-labelledby="api-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">API and integration philosophy</p>
+        <h2 id="api-title">Small, explicit, versioned — when they exist</h2>
+      </div>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>How we intend to expose capability</h3>
+          <ul class="list-check">
+            <li><strong>Per-product contracts.</strong> An integration belongs to one product's API, never to a vague "platform" endpoint.</li>
+            <li><strong>Version from day one.</strong> Breaking changes ship as new versions; existing versions get a documented sunset.</li>
+            <li><strong>Explicit responses.</strong> Success and failure are machine-readable states, not HTTP status codes used creatively.</li>
+            <li><strong>Idempotent writes.</strong> Repeating a request must not create duplicate business effects.</li>
+            <li><strong>Documented, not implied.</strong> Nothing is supported unless it is written down in the product's documentation.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>How we intend to authenticate</h3>
+          <ul class="list-check">
+            <li><strong>Scoped credentials.</strong> Least privilege per integration, revocable without touching the rest of the system.</li>
+            <li><strong>Server-side secrets.</strong> Credentials live in server configuration, never in browser code or a repository.</li>
+            <li><strong>Signed callbacks.</strong> Inbound webhooks are verified by signature and timestamp before any state change.</li>
+            <li><strong>No shared session assumption.</strong> Products do not assume a central login exists — none does today.</li>
+            <li><strong>Review before production.</strong> New integrations are reviewed rather than self-served into production.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ security -->
+  <section class="section section--soft" aria-labelledby="security-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Security principles</p>
+        <h2 id="security-title">Boundaries before features</h2>
+        <p class="lead">
+          These are the principles the reference suite is written to respect.
+          They are commitments about how future systems should be built, not
+          attestations about systems already in production.
+        </p>
+      </div>
+
+      <div class="grid grid-4">
+        <article class="card card--flat">
+          <h3>Fail closed</h3>
+          <p class="muted small">If a check cannot be completed — signature, configuration, permission — the safe outcome is refusal, not a best-effort guess.</p>
+        </article>
+        <article class="card card--flat">
+          <h3>Secrets stay server-side</h3>
+          <p class="muted small">No keys, tokens or credentials in HTML, JavaScript, client storage, screenshots or documentation examples.</p>
+        </article>
+        <article class="card card--flat">
+          <h3>Least privilege</h3>
+          <p class="muted small">Corporate content access never implies administrative access to customer records, payments or network equipment.</p>
+        </article>
+        <article class="card card--flat">
+          <h3>Verify, don't trust</h3>
+          <p class="muted small">Inbound events are authenticated and validated server-side; client-supplied claims are treated as claims.</p>
+        </article>
+        <article class="card card--flat">
+          <h3>Auditability</h3>
+          <p class="muted small">State-changing operations should be attributable and replay-safe, with unresolved records preserved rather than discarded.</p>
+        </article>
+        <article class="card card--flat">
+          <h3>Separation of duties</h3>
+          <p class="muted small">Website content publication and application administration are distinct roles held by distinct systems.</p>
+        </article>
+        <article class="card card--flat">
+          <h3>Data minimisation</h3>
+          <p class="muted small">Collect only what a product needs, keep it only as long as its purpose requires, and define retention deliberately.</p>
+        </article>
+        <article class="card card--flat">
+          <h3>Evidence over assertion</h3>
+          <p class="muted small">A control is only claimed once it has been demonstrated under controlled conditions and the evidence is recorded.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ illustrative example -->
+  <section class="section" aria-labelledby="example-title">
+    <div class="container split" style="align-items:start">
+      <div>
+        <div class="card__meta">
+          <span class="badge badge--reference">Illustrative data</span>
+        </div>
+        <p class="eyebrow">Integration example</p>
+        <h2 id="example-title">A pattern, not a specification</h2>
+        <p class="lead">
+          The example opposite shows the <em>shape</em> of a future
+          product-level integration: explicit states, an idempotency key and a
+          signature scheme. Field names and values are invented for clarity.
+        </p>
+        <ul class="list-arrow">
+          <li>No real endpoint, host, credential or signature algorithm is published here.</li>
+          <li>The payload must not be implemented against — it will change when the owning product defines its actual contract.</li>
+          <li>Any real integration would be documented under the product's own documentation portal when that exists.</li>
+        </ul>
+        <div class="notice notice--demo">
+          <strong>Never publish working credentials in examples.</strong> If a
+          real contract is ever written here, it will use placeholder tokens
+          that are structurally invalid on purpose.
+        </div>
+      </div>
+
+      <div>
+        <div class="code-label">
+          <span>Illustrative request body</span>
+          <span class="tag">example.invalid</span>
+        </div>
+<pre class="code-block"><span class="c-com">// ILLUSTRATIVE ONLY — not a real API contract</span>
+<span class="c-com">// No such endpoint exists or is implied.</span>
+{
+  <span class="c-key">"integration_id"</span>: <span class="c-str">"int_example_0001"</span>,
+  <span class="c-key">"idempotency_key"</span>: <span class="c-str">"idem_example_9f3c…"</span>,
+  <span class="c-key">"product"</span>: <span class="c-str">"civolink-wifi"</span>,
+  <span class="c-key">"action"</span>: <span class="c-str">"access.query"</span>,
+  <span class="c-key">"requested_at"</span>: <span class="c-str">"2026-01-01T00:00:00Z"</span>,
+  <span class="c-key">"payload"</span>: {
+    <span class="c-key">"reference"</span>: <span class="c-str">"REF-EXAMPLE-0001"</span>,
+    <span class="c-key">"state"</span>: <span class="c-str">"pending | granted | refused"</span>
+  }
+}</pre>
+
+        <div class="code-label" style="margin-top:var(--sp-5)">
+          <span>Illustrative response body</span>
+          <span class="tag">example.invalid</span>
+        </div>
+<pre class="code-block"><span class="c-com">// ILLUSTRATIVE ONLY — sample shape</span>
+{
+  <span class="c-key">"ok"</span>: true,
+  <span class="c-key">"state"</span>: <span class="c-str">"granted"</span>,
+  <span class="c-key">"reference"</span>: <span class="c-str">"REF-EXAMPLE-0001"</span>,
+  <span class="c-key">"processed_at"</span>: <span class="c-str">"2026-01-01T00:00:02Z"</span>,
+  <span class="c-key">"signature"</span>: <span class="c-str">"invalid-example-signature"</span>
+}</pre>
+
+        <p class="small muted" style="margin-top:var(--sp-4)">
+          Values above are sample content. <code class="mono">example.invalid</code>
+          is a reserved documentation domain that cannot be resolved.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ docs direction -->
+  <section class="section section--soft" id="docs-direction" aria-labelledby="docs-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Future developer documentation</p>
+        <h2 id="docs-title">Where technical writing will live</h2>
+        <p class="lead">
+          A dedicated documentation destination is planned so that integration
+          material, operator runbooks and product guides have a stable home
+          separate from marketing content.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="card__meta"><span class="badge badge--future">Future</span></div>
+          <h3>Reference documentation</h3>
+          <p class="muted small">Endpoint reference, authentication model, error taxonomy and changelogs — per product, versioned alongside the code it describes.</p>
+        </article>
+        <article class="card">
+          <div class="card__meta"><span class="badge badge--future">Future</span></div>
+          <h3>Guides and runbooks</h3>
+          <p class="muted small">Task-oriented integration guides for partners, and operational runbooks for internal operators, kept separate from public reference.</p>
+        </article>
+        <article class="card">
+          <div class="card__meta"><span class="badge badge--future">Future</span></div>
+          <h3>Decision records</h3>
+          <p class="muted small">Short architecture decision records explaining why a boundary exists, so future contributors do not have to rediscover it.</p>
+        </article>
+      </div>
+
+      <p class="small muted" style="margin-top:var(--sp-5)">
+        Planned destination: <span class="domain-ref">docs.civolink.com</span> —
+        an architectural intention only. No documentation portal is deployed,
+        and no content has been migrated to it.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================================================== CTA -->
+  <section class="section section--tight" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2 id="cta-title">Planning an integration?</h2>
+          <p>
+            Tell us which product you need to connect with and what you are
+            trying to achieve. We will confirm whether a contract exists yet —
+            and say so plainly if it does not.
+          </p>
+        </div>
+        <div class="stack">
+          <a class="btn btn--primary" href="contact.html#technical">Integration enquiry</a>
+          <a class="btn btn--light" href="products.html">Review products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#38c6d9" stroke-width="4" stroke-linecap="round">
+              <path d="M32 17 L45 24.5 L45 39.5 L32 47 L19 39.5 L19 24.5 Z"/>
+              <circle cx="32" cy="32" r="5" fill="#ffffff" stroke="none"/>
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">CIVOLINK</span>
+            <span class="brand__tag">Umbrella Platform</span>
+          </span>
+        </a>
+        <p>
+          The umbrella identity for an ecosystem of independent digital
+          products and services. This is a static HTML reference suite used to
+          establish visual identity and information architecture.
+        </p>
+        <p><span class="badge badge--reference">Reference sample only</span></p>
+      </div>
+
+      <div>
+        <h4>Umbrella site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-nav-link>Home</a></li>
+          <li><a href="products.html" data-nav-link>Products</a></li>
+          <li><a href="control-center.html" data-nav-link>Control Center</a></li>
+          <li><a href="developers.html" data-nav-link aria-current="page">Developers</a></li>
+          <li><a href="about.html" data-nav-link>About</a></li>
+          <li><a href="contact.html" data-nav-link>Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html#civolink-wifi">CIVOLINK WIFI</a></li>
+          <li><a href="products.html#biashara-flow">Biashara Flow</a></li>
+          <li><a href="products.html#future-products">Future products</a></li>
+          <li><a href="control-center.html">Ecosystem overview</a></li>
+          <li><a href="developers.html#integration">Integration approach</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Planned destinations</h4>
+        <ul class="footer-domains">
+          <li><b>civolink.com</b> — corporate site (this reference)</li>
+          <li><b>wifi.civolink.com</b> — planned</li>
+          <li><b>biashara.civolink.com</b> — planned</li>
+          <li><b>docs.civolink.com</b> — future</li>
+          <li><b>accounts.civolink.com</b> — future concept</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p>
+        Static HTML/CSS/JavaScript reference suite. No backend, database,
+        authentication, analytics or external service is connected. Product
+        availability, statuses and any example figures shown anywhere in this
+        suite are illustrative.
+      </p>
+      <p>© <span data-year>2026</span> CIVOLINK — reference sample, not production.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,608 @@
+{
+  "index.html:desktop": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      2,
+      2,
+      3,
+      3,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 0,
+      "h": 0
+    },
+    "smallTargets": 11,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "our-platforms.html:desktop": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 0,
+      "h": 0
+    },
+    "smallTargets": 9,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "services.html:desktop": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      2,
+      3,
+      3,
+      3,
+      3,
+      2,
+      3,
+      3,
+      3,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 0,
+      "h": 0
+    },
+    "smallTargets": 9,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "technology.html:desktop": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 0,
+      "h": 0
+    },
+    "smallTargets": 9,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "about.html:desktop": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 0,
+      "h": 0
+    },
+    "smallTargets": 9,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "contact.html:desktop": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [
+      {
+        "id": "f-name",
+        "labelled": true,
+        "described": "e-name"
+      },
+      {
+        "id": "f-email",
+        "labelled": true,
+        "described": "e-email"
+      },
+      {
+        "id": "f-route",
+        "labelled": true,
+        "described": "e-route"
+      },
+      {
+        "id": "f-message",
+        "labelled": true,
+        "described": "e-message"
+      }
+    ],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 0,
+      "h": 0
+    },
+    "smallTargets": 9,
+    "ariaLive": 1,
+    "tablesHaveHeaders": true
+  },
+  "index.html:mobile": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      2,
+      2,
+      3,
+      3,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 44,
+      "h": 44
+    },
+    "smallTargets": 11,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "our-platforms.html:mobile": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 44,
+      "h": 44
+    },
+    "smallTargets": 9,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "services.html:mobile": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      2,
+      3,
+      3,
+      3,
+      3,
+      2,
+      3,
+      3,
+      3,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 44,
+      "h": 44
+    },
+    "smallTargets": 9,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "technology.html:mobile": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 44,
+      "h": 44
+    },
+    "smallTargets": 9,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "about.html:mobile": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 44,
+      "h": 44
+    },
+    "smallTargets": 9,
+    "ariaLive": 0,
+    "tablesHaveHeaders": true
+  },
+  "contact.html:mobile": {
+    "lang": true,
+    "viewport": true,
+    "title": true,
+    "headings": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3
+    ],
+    "h1Count": 1,
+    "headingSkips": [],
+    "imgsNoAlt": 0,
+    "unclosedControls": 0,
+    "landmarks": {
+      "header": true,
+      "nav": true,
+      "main": true,
+      "footer": true
+    },
+    "navToggleAria": {
+      "has": true,
+      "expanded": "false",
+      "hasControls": true
+    },
+    "inputs": [
+      {
+        "id": "f-name",
+        "labelled": true,
+        "described": "e-name"
+      },
+      {
+        "id": "f-email",
+        "labelled": true,
+        "described": "e-email"
+      },
+      {
+        "id": "f-route",
+        "labelled": true,
+        "described": "e-route"
+      },
+      {
+        "id": "f-message",
+        "labelled": true,
+        "described": "e-message"
+      }
+    ],
+    "unlabelledInputs": 0,
+    "focusStyles": 0,
+    "skipLink": true,
+    "navToggleTouchTarget": {
+      "w": 44,
+      "h": 44
+    },
+    "smallTargets": 9,
+    "ariaLive": 1,
+    "tablesHaveHeaders": true
+  }
+}

@@ -1,0 +1,77 @@
+# CIVOLINK Corporate - release pipeline (DRAFT, disabled until owner authorizes)
+#
+# NOT ENABLED: rename to .github/workflows/release-corporate.yml only after
+#   1. CIVOLINK-CORPORATE is a governed git repository (owner decision), and
+#   2. the remote is authorised, and
+#   3. the deploy SSH key + CI secrets are provisioned by the owner, and
+#   4. the production VPS origin is live (U-005 execution complete).
+# Never triggers on ordinary pushes to main. Tag- and manual-only.
+
+name: corporate-release
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'git ref (tag) to release, e.g. site-v1.0.0'
+        required: true
+      confirm:
+        description: 'type RELEASE to confirm production activation'
+        required: true
+  push:
+    tags: ['site-v*.*.*']   # tag-only; ordinary pushes to any branch do not deploy
+
+permissions:
+  contents: read
+
+env:
+  RELEASE_HOST: 162.35.37.121            # owner-verified VPS (U-005)
+  RELEASE_ROOT: /var/www/civolink.co.ke
+  DEPLOY_USER: civolink-www              # least-privilege deploy user (owner-created)
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: ${{ inputs.ref || github.ref_name }} }
+      - name: verify payload inventory and hashes
+        run: |
+          set -euo pipefail
+          for f in index.html about.html services.html our-platforms.html technology.html contact.html assets/css/styles.css assets/js/main.js assets/logos/CIVOLINK_Mark.png assets/logos/CIVOLINK_Primary.png; do
+            [ -f "website/$f" ] || { echo "MISSING $f"; exit 1; }
+          done
+          grep -REo '(src|href)="https?://[^"]+"' website/*.html | tee /tmp/ext.txt
+          [ ! -s /tmp/ext.txt ] || { echo "external references found:"; cat /tmp/ext.txt; exit 1; }
+      # zero-external-requests + hostname-unlinked check per governance
+
+  release:
+    needs: validate
+    runs-on: ubuntu-latest
+    environment: production   # gate = protection rules (reviewers) once authorised
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: ${{ inputs.ref || github.ref_name }} }
+      - name: set release id
+        id: rid
+        run: echo "id=$(date -u +%Y%m%d-%H%M%S)-site-${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
+      - name: rsync payload to new release directory
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_KEY }}   # provisioned by owner only
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh && printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key && chmod 600 ~/.ssh/deploy_key
+          rsync -az --delete \
+            --include='index.html' --include='about.html' --include='services.html' \
+            --include='our-platforms.html' --include='technology.html' --include='contact.html' \
+            --include='assets/' --include='assets/**' --exclude='*' \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes -o UserKnownHostsFile=${{ secrets.DEPLOY_KNOWN_HOSTS }}" \
+            website/ "$DEPLOY_USER@$RELEASE_HOST:$RELEASE_ROOT/releases/${{ steps.rid.outputs.id }}/"
+      # activation (atomic symlink + reload) happens server-side via a restricted
+      #  command="" key or a pre-approved release script - owner authorship required (§I items 6-7)
+      - name: activate + health check (only with typed confirmation)
+        if: ${{ inputs.confirm == 'RELEASE' }}
+        run: |
+          set -euo pipefail
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes "$DEPLOY_USER@$RELEASE_HOST" \
+            "cd $RELEASE_ROOT/releases/${{ steps.rid.outputs.id }} && ln -sfn . $RELEASE_ROOT/current.tmp && mv $RELEASE_ROOT/current.tmp $RELEASE_ROOT/current && sudo nginx -t && sudo systemctl reload nginx && cd $RELEASE_ROOT/current && sudo ./deploy/healthcheck.sh https://civolink.co.ke"
