@@ -3,6 +3,7 @@
 **Project:** CIVOLINK Corporate static website (`CIVOLINK-CORPORATE\website\`)
 **Status:** **PREPARED 2026-11-16 — NOT DEPLOYED.** Deployment requires (1) owner-resolved D23, (2) origin provisioned per U-005 architecture, (3) explicit owner authorization for the release.
 **Manifest version:** 1.0 · **Companion docs:** `deploy\release-inventory.txt`, `deploy\healthcheck.sh`, `CIVOLINK-WORKSPACE-AUDIT\CIVOLINK_U005_DEPLOYMENT_READINESS_ASSESSMENT.md` (authoritative U-005 record), `..\docs\website\CIVOLINK_WEBSITE_SECURITY_AND_DEPLOYMENT_SPECIFICATION.md`, `..\docs\website\CIVOLINK_WEBSITE_SEO_SPECIFICATION.md`.
+**Encoding correction update (2026-11-18, local):** website HTML source/pages normalized to UTF-8 without BOM with `<meta charset="UTF-8">` and confirmed mojibake repaired; `deploy/release-inventory.txt` refreshed to match corrected payload hashes/sizes. **Still NOT DEPLOYED** (see audit report `docs\website\CIVOLINK_UTF8_ENCODING_AUDIT_AND_CORRECTION_REPORT_2026-11-18.md`).
 
 ---
 

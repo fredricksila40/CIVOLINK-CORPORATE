@@ -1,16 +1,16 @@
-﻿=== PRODUCTION PAYLOAD (10 files) - release into /var/www/civolink.co.ke/releases/<release-id>/
-     12647  B39FCCF69C64B22E  index.html
-     14837  7E91102D0BDC2468  about.html
-     15570  9C7B659F3DA7A04B  services.html
-     12441  269C5C2CE1707C05  our-platforms.html
-     11133  BC29A0FC5C503705  technology.html
-     13599  30FC83B5C1EA1479  contact.html
-     25594  A0F44FD10D6D16E9  assets/css/styles.css
-      4842  6DF6FCC47B2742F2  assets/js/main.js
-     42959  80EA6A3794CFC6E2  assets/logos/CIVOLINK_Mark.png
-     45841  1B0A7624F7651F80  assets/logos/CIVOLINK_Primary.png
+=== PRODUCTION PAYLOAD (10 files) - release into /var/www/civolink.co.ke/releases/<release-id>/
+    12565  293ACFDA1FA8472F  index.html
+    14745  C62F8C856CE27D7B  about.html
+    15478  DF963A40545B0ED0  services.html
+    12276  4DBCA4421D0BA772  our-platforms.html
+    11041  3420CF09900D0C1A  technology.html
+    13507  AD29C2B6F247A689  contact.html
+    25594  A0F44FD10D6D16E9  assets/css/styles.css
+     4842  6DF6FCC47B2742F2  assets/js/main.js
+    42959  80EA6A3794CFC6E2  assets/logos/CIVOLINK_Mark.png
+    45841  1B0A7624F7651F80  assets/logos/CIVOLINK_Primary.png
 
-TOTAL PRODUCTION BYTES: 199463
+TOTAL PRODUCTION BYTES: 198848
 
 === EXCLUDED (never deploy) ===
 excluded: evidence/
