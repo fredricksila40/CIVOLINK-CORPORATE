@@ -163,3 +163,10 @@ For `civolink.co.ke` and `www.civolink.co.ke` server blocks (scoped to those vho
 
 ---
 *End of report.*
+
+---
+
+## 12. Deployment update (2026-11-24, owner-authorized)
+
+The corrected release was deployed to production: release 20261124-185300-site-utf8fix, atomic symlink switch with rollback target 20261118-000000-site-contentfix retained. A scoped charset utf-8; directive was added to the Corporate server block of /etc/nginx/sites-available/civolink (config backed up, 
+ginx -t passed, service reloaded; Control Center server block untouched). Remote full SHA-256 verification passed before activation. Live verification: all six pages and both assets return 200 with Content-Type: ...; charset=utf-8; mojibake hits 0; healthcheck.sh 14/14 PASS (exit 0). Earlier sections describing production as uncorrected are historical and reflect the pre-deployment state.
